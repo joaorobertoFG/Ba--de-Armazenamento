@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baú de Armazenamento</title>
+
+    <link rel="icon" href="css/closed.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+
+    <script src="https://kit.fontawesome.com/ee76d41b3b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main class="conteudo">
+        <div class="principal">
+            <div class="bag2"></div>
+            <img class="bag" src="css/closed.png">
+            
+            <form action="" class="adicionar" id="novoItem">
+                <label for="item">Item</label>
+                <select class="select" name="nome" id="nome" required>
+                    <option value="Espada">Espada</option>
+                    <option value="Arco">Arco</option>
+                    <option value="Flechas">Flechas</option>
+                    <option value="Poção de Vida">Poção de Vida</option>
+                    <option value="Poção de Mana">Poção de Mana</option>
+                    <option value="Cajado Mágico">Cajado Mágico</option>
+                    <option value="Escudo de Ferro">Escudo de Ferro</option>
+                </select>
+
+                <label for="item">Quantidade</label>
+                <input type="number" name="quantidade" id="quantidade" required>
+                <input type="submit" value="Adicionar" class="cadastrar">
+            </form>
+        </div>
+
+        <div id="inventario">
+            <ul class="lista" id="lista">
+                <li class="inventario"><i class="fa-solid fa-sack-xmark"></i>Inventário</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
